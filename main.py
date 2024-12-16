@@ -21,7 +21,7 @@ def outlook_meeting_formatter():
     names = []
     for line in lines:
         person = line.split("\t")
-        excluded_names = ["Name", "Bharat Jina", "Joel Kingsman"]
+        excluded_names = ["Name"]
         if person[0] not in excluded_names:
             people.append(person)  # people is a list of all the data associated with each name
             names.append(person[0])  # names is a list of just the names
